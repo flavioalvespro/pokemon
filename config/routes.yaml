@@ -1,0 +1,13 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+card_list:
+    path: /cards
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\CardController::list
+card_show:
+    path: /cards/{slug}
+    # the controller value has the format 'controller_class::method_name'
+    controller: App\Controller\CardController::show
